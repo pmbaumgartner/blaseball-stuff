@@ -15244,7 +15244,7 @@ Name: N Fielded, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corr</span> <span class="o">=</span> <span class="n">fielded_with_attributes</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s2">&quot;</span><span class="si">% o</span><span class="s2">f Team Total Reach&quot;</span><span class="p">][</span><span class="s2">&quot;</span><span class="si">% o</span><span class="s2">f Team N Fielded&quot;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corr</span> <span class="o">=</span> <span class="n">fielded_with_attributes</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">&quot;</span><span class="si">% o</span><span class="s2">f Team Total Reach&quot;</span><span class="p">][</span><span class="s2">&quot;</span><span class="si">% o</span><span class="s2">f Team N Fielded&quot;</span><span class="p">]</span>
 <span class="n">chart_standard</span> <span class="o">=</span> <span class="p">(</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span>
         <span class="n">fielded_with_attributes</span><span class="p">,</span>
@@ -15363,7 +15363,7 @@ Name: N Fielded, dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fielded_with_attributes</span><span class="o">.</span><span class="n">corr</span><span class="p">()[</span><span class="s2">&quot;% Hit Against&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fielded_with_attributes</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="s2">&quot;% Hit Against&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
      </div>
